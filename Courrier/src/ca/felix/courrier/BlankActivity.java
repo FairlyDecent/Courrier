@@ -1,5 +1,6 @@
 package ca.felix.courrier;
 
+import ca.felix.courrier.R;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;

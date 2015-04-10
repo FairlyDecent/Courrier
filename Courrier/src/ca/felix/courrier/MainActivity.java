@@ -1,5 +1,7 @@
 package ca.felix.courrier;
 
+import ca.felix.courrier.R;
+
 
 public class MainActivity extends BlankActivity {
 	
