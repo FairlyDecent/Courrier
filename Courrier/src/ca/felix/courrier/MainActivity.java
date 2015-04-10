@@ -1,5 +1,6 @@
 package ca.felix.courrier;
 
+
 public class MainActivity extends BlankActivity {
 	
 	protected int initView() {
@@ -7,6 +8,10 @@ public class MainActivity extends BlankActivity {
 	}
 
 	protected void init() {
+	}
+	
+	protected int initOptionsMenu() {
+		return R.menu.main;
 	}
 
 	protected boolean optionsItemSelected(int itemId) {
