@@ -2,7 +2,10 @@
 <resources>
 
     <string name="app_name">Courrier</string>
-    <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    
+    <string name="loading_activity">LOADING</string>
+    <string name="main_menu_activity">MAIN MENU SCREEN!</string>
+    
+    <string name="click">click me</string>
 
 </resources>
