@@ -3,9 +3,8 @@
 
     <string name="app_name">Courrier</string>
     
-    <string name="loading_activity">LOADING</string>
-    <string name="main_menu_activity">MAIN MENU SCREEN!</string>
+    <string name="main_activity">Main Activity</string>
     
-    <string name="click">click me</string>
+    <string name="action_settings">Settings</string>
 
 </resources>
