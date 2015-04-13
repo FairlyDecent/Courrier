@@ -1,6 +1,5 @@
-package ca.felix.courrier;
+package ca.felix.courrierv2;
 
-import ca.felix.courrier.R;
 
 public class SettingsActivity extends BlankActivity {
 
@@ -8,12 +7,11 @@ public class SettingsActivity extends BlankActivity {
 		return R.layout.activity_settings;
 	}
 
-	protected int initOptionsMenu() {
-		return R.menu.settings;
+	protected void init() {
 	}
 
-	protected void init() {
-		getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+	protected int initOptionsMenu() {
+		return R.menu.settings;
 	}
 
 	protected boolean optionsItemSelected(int itemId) {
