@@ -18,9 +18,11 @@ public abstract class BlankActivity extends ActionBarActivity {
 	
 	protected abstract int initView();
 	
-	protected abstract void init();
+	protected abstract void init(Bundle bundle);
 	
-	protected abstract int initOptionsMenu();
+	protected abstract int initOptionsMenuLayout();
+	
+	protected abstract void initOptionsMenu(Menu menu);
 	
 	protected abstract boolean optionsItemSelected(int itemId);
 	
@@ -28,20 +30,12 @@ public abstract class BlankActivity extends ActionBarActivity {
 		super.onCreate(savedInstanceState);
 		setContentView(initView());
 		setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-		init();
+		init(savedInstanceState);
 	}
 	
 	public boolean onCreateOptionsMenu(Menu menu) {
-		getMenuInflater().inflate(initOptionsMenu(), menu);
-		
-		if (menu.findItem(R.id.action_gps) != null) {
-			MenuItem item = menu.findItem(R.id.action_gps);
-			if (!item.isCheckable()) item.setCheckable(true);
-			item.setChecked(StaticConfig.gps_state);
-			if (item.isChecked()) item.setIcon(R.drawable.ic_action_location_found);
-			else item.setIcon(R.drawable.ic_action_location_off);
-		}
-		
+		getMenuInflater().inflate(initOptionsMenuLayout(), menu);
+		initOptionsMenu(menu);
 		return true;
 	}
 	
