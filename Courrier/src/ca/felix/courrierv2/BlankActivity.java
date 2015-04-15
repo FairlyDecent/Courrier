@@ -62,14 +62,14 @@ public abstract class BlankActivity extends ActionBarActivity {
 				});
 			}
 			return true;
-		case R.id.action_gps :
+		case R.id.action_available :
 			if (item.isCheckable()) {
-				item.setChecked(!StaticConfig.gps_state);
-				StaticConfig.gps_state = item.isChecked();
-				if (item.isChecked()) item.setIcon(R.drawable.ic_action_location_found);
-				else item.setIcon(R.drawable.ic_action_location_off);
+				item.setChecked(!StaticConfig.available_state);
+				StaticConfig.available_state = item.isChecked();
+				if (item.isChecked()) item.setIcon(R.drawable.ic_action_place_dark);
+				else item.setIcon(R.drawable.ic_action_place);
 			} else item.setCheckable(true);
-			return LocationUtils.toggleGPS();
+			return LocationUtils.toggleAvailability();
 		default :
 			return super.onOptionsItemSelected(item);
 		}

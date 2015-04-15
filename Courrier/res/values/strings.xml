@@ -5,9 +5,14 @@
     
     <string name="action_settings">Settings</string>
     <string name="action_search">Search</string>
-    <string name="action_gps">GPS</string>
+    <string name="action_gps">Availability</string>
     
     <string name="main_activity">Main Activity!</string>
     <string name="settings_activity">Settings Activity!</string>
+    
+    <string name="username_form">Username</string>
+    <string name="password_form">Password</string>
+    
+    <string name="login_button">LOGIN</string>
 
 </resources>

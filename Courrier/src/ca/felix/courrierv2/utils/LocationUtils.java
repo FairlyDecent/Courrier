@@ -6,7 +6,7 @@ public class LocationUtils {
 		return false;
 	}
 	
-	public static boolean toggleGPS() {
-		return true;
+	public static boolean toggleAvailability() {
+		return false;
 	}
 }

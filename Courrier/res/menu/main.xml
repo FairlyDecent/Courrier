@@ -12,9 +12,9 @@
         app:actionViewClass="android.support.v7.widget.SearchView" />
     
     <item
-        android:id="@+id/action_gps"
+        android:id="@+id/action_available"
         android:orderInCategory="2"
-        android:icon="@drawable/ic_action_location_found"
+        android:icon="@drawable/ic_action_place_dark"
         android:title="@string/action_gps"
         android:checkable="true"
         android:checked="true"
