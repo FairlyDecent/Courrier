@@ -29,6 +29,7 @@ proguard/
 # Eclipse Files
 .metadata
 .settings
+api_keys.xml
 
 # Android Studio Files
 .idea
